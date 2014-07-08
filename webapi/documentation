@@ -1,0 +1,14 @@
+
+Authentication
+
+curl -X POST -d phone=777 -d password=777 http://alpha.vocotransportation.com:3000/api/web/authenticate
+
+
+Trips
+curl -X GET -H 'Authorization: Token token="7c1a4ce5849606081e0d680e5be342cc95f4197c6f2d6826d17f80e6a6494ff163d5340c9187e68a9b07538385dbdc2332611f9cc0d05f3d70735b410cabc543"' http://alpha.vocotransportation.com:3000/api/web/trips
+
+// trips where this user is the driver
+curl -X GET -H 'Authorization: Token token="7c1a4ce5849606081e0d680e5be342cc95f4197c6f2d6826d17f80e6a6494ff163d5340c9187e68a9b07538385dbdc2332611f9cc0d05f3d70735b410cabc543"' http://alpha.vocotransportation.com:3000/api/web/trips?role=driver
+
+// trips by date range
+curl -X GET -H 'Authorization: Token token="7c1a4ce5849606081e0d680e5be342cc95f4197c6f2d6826d17f80e6a6494ff163d5340c9187e68a9b07538385dbdc2332611f9cc0d05f3d70735b410cabc543"' http://alpha.vocotransportation.com:3000/api/web/trips?role=ride&begin_date=2014-01-01&end_date=2014-07-12
