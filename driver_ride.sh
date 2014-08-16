@@ -1,0 +1,1 @@
+ curl -H 'Authorization: Token token="7c1a4ce5849606081e0d680e5be342cc95f4197c6f2d6826d17f80e6a6494ff163d5340c9187e68a9b07538385dbdc2332611f9cc0d05f3d70735b410cabc543"' -X GET http://192.168.1.109:3000/api/drivers/rides/402
