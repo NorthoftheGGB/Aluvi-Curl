@@ -1,1 +1,2 @@
-curl -X POST -d email=jgjh@com.com -d password=9999999999 http://localhost:3000/api/users/login
+#!/bin/bash
+curl -X POST -d email=$1 -d password=$2 http://52.27.239.209:3000/api/users/login
